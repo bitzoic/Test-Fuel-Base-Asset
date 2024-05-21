@@ -1,0 +1,21 @@
+[[package]]
+name = "core"
+source = "path+from-root-C8F10A6703DB4BB0"
+
+[[package]]
+name = "standards"
+source = "git+https://github.com/FuelLabs/sway-standards?tag=v0.4.4#a001d3c248595112aae67e5633a06ef9bc0536ae"
+dependencies = ["std"]
+
+[[package]]
+name = "std"
+source = "git+https://github.com/fuellabs/sway?rev#573a9ff7570f2baad774a4c05e3af9afb7808daa"
+dependencies = ["core"]
+
+[[package]]
+name = "test_asset_id"
+source = "member"
+dependencies = [
+    "standards",
+    "std",
+]
